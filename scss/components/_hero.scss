@@ -15,7 +15,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-image: 
-    url('/images/hero/hero-bg_mob.jpg'),
+    url('./images/hero/hero-bg_mob.jpg'),
     linear-gradient(to right, var(--hero-gradient), var(--hero-gradient));
 
     @include mq(mobile-only){
@@ -24,7 +24,7 @@
 
   @include mq(tablet) {
     background-image: 
-      url('/images/hero/hero-bg_tab.jpg'),
+      url('./images/hero/hero-bg_tab.jpg'),
       linear-gradient(to right, var(--hero-gradient), var(--hero-gradient));
     padding-top: 118px;
     padding-bottom: 118px;
@@ -32,7 +32,7 @@
   }
   @include mq(desktop) {
     background-image: 
-      url('/images/hero/hero-bg_desk.jpg'),
+      url('./images/hero/hero-bg_desk.jpg'),
       linear-gradient(to right, var(--hero-gradient), var(--hero-gradient));
     padding-top: 200px;
     padding-bottom: 200px;
