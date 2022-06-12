@@ -1,0 +1,25 @@
+.page-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+
+  @include mq(mobile-only) {
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+
+  @include mq(tablet) {
+    margin-bottom: 30px;
+  }
+  @include mq(desktop) {
+    margin-bottom: 50px;
+  }
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+@include mq(mobile-only) {
+  .page-nav__button {
+    margin-bottom: 15px;
+  }
+}

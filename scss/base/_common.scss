@@ -1,0 +1,54 @@
+body {
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+.section__title {
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+
+  color: var(--title-text-color);
+
+  @include mq(desktop) {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+}
+.features,
+.example,
+.team,
+.client {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include mq(desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  // @include mq(mobile) {
+  //   padding-bottom: 60px;
+  //   padding-top: 60px;
+  // }
+  // @include mq(tablet) {
+  //   padding-bottom: 60px;
+  //    padding-top: 60px;
+  // }
+  
+}
+
+
+img {
+  display: block;
+}
+.footer-section {
+  font-size: 14px;
+  line-height: 1.7;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--background-color-hero-footer);
+}
