@@ -2,7 +2,11 @@
   display: flex;
   flex-direction: column;
 
-  margin-left: 93px;
+  margin-left: 0px;
+
+  @include mq(desktop){
+    margin-left: 93px;
+  }
 
   &__icon {
     margin-left: 10px;
@@ -13,10 +17,24 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
+
+    @include mq(mobile){
+      flex-direction: column;
+    }
+      @include mq(tablet){
+      flex-direction: column;
+    }
+    @include mq (desktop){
+      flex-direction: row;
+    }
   }
 
   &__label {
     position: relative;
+    margin-bottom: 20px;
+    @include mq(desktop){
+      margin-bottom: 0px;
+    }
   }
   &__txt {
     position: absolute;
@@ -31,6 +49,10 @@
 .sign-up__input {
   width: 368px;
   height: 50px;
+
+  @include mq(mobile-only){
+    width: 450px;
+  }
 
   background-color: transparent;
   outline: transparent;

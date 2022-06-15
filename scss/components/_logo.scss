@@ -1,5 +1,15 @@
 .logo {
-  margin-right: 93px;
+  margin-right: 0px;
+
+  @include mq(mobile-only){
+    padding: 16px 0px 16px 0px;
+  }
+  @include mq(tablet){
+     margin-right: 88px;
+  }
+  @include mq(desktop){
+     margin-right: 93px;
+  }
 
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -23,4 +33,20 @@
 }
 .logo--focus:focus {
   color: var(--secondary-text-color);
+}
+
+.footer-logo{
+  @include mq(mobile-only){
+    display: inline-block;
+    padding:0px;
+    }
+    @include mq(tablet){
+     margin-right: 0px;
+  }
+  @include mq(desktop){
+     margin-right: 0px;
+  
+
+}
+
 }

@@ -17,29 +17,39 @@ body {
     font-size: 36px;
   }
 }
-.features,
+.features {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include mq(mobile) {
+    padding-bottom: 60px;
+  }
+  @include mq(tablet) {
+    padding-bottom: 60px;
+  }
+  @include mq(desktop) {
+    padding-top: 94px;
+    padding-bottom: 0px;
+  }
+}
 .example,
 .team,
 .client {
   padding-top: 60px;
   padding-bottom: 60px;
 
+  @include mq(mobile) {
+    padding-bottom: 60px;
+  }
+  @include mq(tablet) {
+    padding-bottom: 60px;
+  }
   @include mq(desktop) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
 
-  // @include mq(mobile) {
-  //   padding-bottom: 60px;
-  //   padding-top: 60px;
-  // }
-  // @include mq(tablet) {
-  //   padding-bottom: 60px;
-  //    padding-top: 60px;
-  // }
-  
 }
-
 
 img {
   display: block;

@@ -5,11 +5,22 @@
   margin-bottom: 0px;
   padding: 0px;
 
+  @include mq(mobile-only){
+    display: none;
+  }
+  @include mq(tablet-only) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   list-style: none;
   align-items: center;
 
   &__item:not(:last-child) {
     margin-right: 50px;
+    @include mq(tablet-only) {
+      margin-right: 0px;
+    }
   }
 
   &__icon {
@@ -24,5 +35,18 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+}
+
+.auth-nav__link--tel {
+  @include mq(tablet-only) {
+    padding-top: 0px;
+    padding-bottom: 21px;
+  }
+}
+.auth-nav__link--mail {
+  @include mq(tablet-only) {
+    padding-top: 21px;
+    padding-bottom: 10px;
   }
 }

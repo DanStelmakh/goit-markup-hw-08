@@ -1,6 +1,23 @@
+.footer-tab {
+  display: block;
+
+  @include mq(tablet) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-bottom: 60px;
+  }
+  @include mq(desktop) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
 .adress {
   font-style: normal;
   margin-top: 20px;
+
+
 
   &__text {
     margin-bottom: 9px;

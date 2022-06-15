@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/portfolio.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <nav class="navigation">
           <a class="logo" href=""> Web<span class="logo--header">Studio</span> </a>
@@ -37,7 +37,7 @@
 
         <ul class="auth-nav">
           <li class="auth-nav__item">
-            <a class="auth-nav__link" href="info@devstudio.com">
+            <a class="auth-nav__link auth-nav__link--mail" href="info@devstudio.com">
               <svg class="auth-nav__icon" width="16" height="12">
                 <use href="./images/icon.svg#icon-envelope"></use>
               </svg>
@@ -45,7 +45,7 @@
             </a>
           </li>
           <li class="auth-nav__item">
-            <a class="auth-nav__link" href="tel:+380961111111">
+            <a class="auth-nav__link auth-nav__link--tel" href="tel:+380961111111">
               <svg class="auth-nav__icon" width="10" height="16">
                 <use href="./images/icon.svg#icon-smartphone"></use>
               </svg>
@@ -54,7 +54,7 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header> 
     <main>
       <!-- Портфолио  -->
       <section class="portfolio-section">
@@ -508,10 +508,11 @@
       </section>
     </main>
     <!-- Адресс и контакты -->
-    <!-- <footer class="footer-section">
+  <footer class="footer-section">
       <div class="container primary-footer">
-        <div>
-          <a class="logo logo--focus" href="">Web<span class="logo--footer">Studio</span></a>
+        <div class="footer-tab">
+          <div class="logo-adress">
+          <a class="logo  logo--focus footer-logo" href="">Web<span class="logo--footer">Studio</span></a>
           <address class="adress">
             <p class="adress__text">г. Киев, пр-т Леси Украинки, 26</p>
             <ul class="adress__list list">
@@ -557,10 +558,10 @@
               </a>
             </li>
           </ul>
-        </div>
+        </div></div>
 
         <div class="sign-up">
-          <b class="join__title">Подпишитесь на рассылку</b>
+          <h3 class="join__title">Подпишитесь на рассылку</h3>
 
           <div class="sign-up__form">
             <label class="sign-up__label">
@@ -582,6 +583,13 @@
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

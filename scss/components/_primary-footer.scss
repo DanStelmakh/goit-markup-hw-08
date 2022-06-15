@@ -1,4 +1,10 @@
 .primary-footer {
-  display: flex;
-  align-items: baseline;
+  display: block;
+  text-align: center;
+
+  @include mq(desktop) {
+    display: flex;
+    align-items: baseline;
+    text-align: left;
+  }
 }

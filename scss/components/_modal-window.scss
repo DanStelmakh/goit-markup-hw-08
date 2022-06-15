@@ -24,8 +24,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  width: 528px;
+  width: 450px;
+@include mq(desktop){
+   width: 528px;
+}
+ 
 
   padding: 40px;
 
@@ -190,8 +193,11 @@
   display: flex;
   align-items: center;
 
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 0.03em;
+@include mq(desktop){
+  font-size: 14px;
+}
 
   justify-content: center;
 
@@ -226,4 +232,6 @@
 
 .checkbox__link {
   color: var(--accent-color);
+  margin-left: 5px;
+
 }

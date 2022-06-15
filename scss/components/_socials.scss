@@ -36,7 +36,17 @@
 }
 
 .join {
-  margin-left: 70px;
+  margin-left: 0px;
+
+  @include mq(mobile-only) {
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  @include mq(desktop){
+    margin-left: 70px;
+  }
 
   &__icons {
     fill: currentColor;
@@ -49,6 +59,10 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 20px;
+
+    // @include mq(mobile-only) {
+    //   text-align: center;
+    // }
 
     color: var(--secondary-text-color);
   }

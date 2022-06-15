@@ -5,6 +5,6 @@
 3. 1200px.
 
 
-features,clients.examples, portfolio, hero сделал
+features,clients.examples, portfolio, hero, хєдєр, футер, модальное окно сделал
 
-Нужно сделать хэдэр, футер, мобильное меню.
+Нужно сделать  мобильное меню
