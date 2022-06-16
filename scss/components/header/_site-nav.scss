@@ -1,16 +1,22 @@
 .navigation {
   display: flex;
   align-items: center;
+  
 
   &__site-nav {
     display: flex;
     @include mq(mobile-only){
       display: none;
+      
     }
   }
   &__item:not(:last-child) {
     margin-right: 50px;
   }
+   @include mq(mobile-only){
+      width: 100%;
+      
+}
 }
 
 .navigation__link,
