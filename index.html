@@ -20,23 +20,22 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- HEADER -->
+    <!-- /HEADER -->
     <header class="header">
       <div class="container header__container">
         <nav class="navigation">
           <a class="logo" href=""> Web<span class="logo--header">Studio</span> </a>
-              <button
-                class="menu-toggle js-open-menu"
-                aria-expanded="false"
-                aria-controls="mobile-menu"
-              >
-                <svg width="40" height="40">
-                  <use href="./images/icon.svg#icon-menu_toggle"></use>
-                </svg>
-              </button>
-            
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="40" height="40">
+              <use href="./images/icon.svg#icon-menu_toggle"></use>
+            </svg>
+          </button>
+
           <ul class="navigation__site-nav list">
-           
             <li class="navigation__item">
               <a class="navigation__link navigation__link--current" href=""> Студия </a>
             </li>
@@ -44,7 +43,6 @@
               <a class="navigation__link" href="./portfolio.html"> Портфолио </a>
             </li>
             <li class="navigation__item"><a class="navigation__link" href=""> Контакты </a></li>
-            
           </ul>
         </nav>
 
@@ -62,23 +60,27 @@
               <svg class="auth-nav__icon" width="10" height="16">
                 <use href="./images/icon.svg#icon-smartphone"></use>
               </svg>
-              +38 096 111 11 11
+              +38 096 123 45 67
             </a>
           </li>
         </ul>
       </div>
     </header>
     <main>
-      <!-- Мобильное меню -->
-      <div class="menu-container js-menu-container is-open container" id="mobile-menu">
+      <!-- /Мобильное меню -->
+      <div class="menu-container js-menu-container container" id="mobile-menu">
         <button class="menu-toggle menu-toggle--close js-close-menu">
           <svg width="30" height="30">
             <use href="./images/icon.svg#icon-close_btn"></use>
           </svg>
         </button>
         <ul class="mobile-menu list">
-          <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Студия</a></li>
-          <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Портфолио</a></li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="./index.html">Студия</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="./portfolio.html">Портфолио</a>
+          </li>
           <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Контакты</a></li>
         </ul>
         <ul class="mobile-auth list">
@@ -89,7 +91,7 @@
           </li>
           <li class="mobile-auth__item">
             <a class="mobile-auth__link mobile-auth__link--mail" href="tel:+380961111111"
-              >+38 096 1111111</a
+              >+38 096 123 45 67</a
             >
           </li>
         </ul>
@@ -106,13 +108,13 @@
           <li class="mobile-socials__item"><a class="mobile-socials__link" href="">LinkedIn</a></li>
         </ul>
       </div>
-      <!-- Блок герои -->
+      <!-- /Блок герои -->
       <section class="section hero">
         <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
         <button class="button button--primary" type="button" data-modal-open>
           Заказать услугу
         </button>
-        <!-- Модально окно -->
+        <!-- /Модально окно -->
         <div class="backdrop backdrop--is-hidden" data-modal>
           <div class="modal-window">
             <b class="modal-window__title">Оставьте свои данные, мы вам перезвоним</b>
@@ -199,7 +201,7 @@
           </div>
         </div>
       </section>
-      <!-- Наши преимущества -->
+      <!-- /Наши преимущества -->
       <section class="section features">
         <div class="container">
           <h2 class="section__title visually-hidden">Наши преимущества</h2>
@@ -251,7 +253,7 @@
           </ul>
         </div>
       </section>
-      <!-- Примеры наших работ -->
+      <!-- /Примеры наших работ -->
       <section class="section example">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
@@ -288,7 +290,7 @@
           </ul>
         </div>
       </section>
-      <!-- Наша команда -->
+      <!-- /Наша команда -->
       <section class="section team">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
@@ -549,7 +551,7 @@
         </div>
       </section>
 
-      <!-- Наши клиенты -->
+      <!-- /Наши клиенты -->
       <section class="section client">
         <div class="container">
           <h2 class="section__title">Постоянные клиенты</h2>
@@ -600,7 +602,7 @@
         </div>
       </section>
     </main>
-    <!-- Адресс и контакты -->
+    <!-- /Адресс и контакты -->
     <footer class="footer-section">
       <div class="container primary-footer">
         <div class="footer-tab">
@@ -680,6 +682,7 @@
         </div>
       </div>
     </footer>
+    <!-- /SCRIPTS -->
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
